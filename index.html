@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon - Apple Products</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f5;
+  }
+  .header {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .header button {
+    margin: 0 5px;
+    padding: 10px;
+    background-color: #007600;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .product-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .product-details {
+    max-width: 500px;
+    margin-left: 20px;
+  }
+  .footer {
+    background-color: #007600;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .form-section {
+    margin: 20px;
+  }
+  .form-section h2 {
+    color: #007600;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <button onclick="navigateTo('home')">Home</button>
+  <button onclick="navigateTo('product')">Product</button>
+</div>
+
+<div class="product-container">
+  <img src="apple-product-image.jpg" alt="Apple Product" style="width:300px;height:auto;">
+  <div class="product-details">
+    <h2>Apple Product</h2>
+    <p>Explore the latest from Apple. Shop Mac notebooks and desktops, Apple Watch, iPhone, iPad, and iPod.</p>
+  </div>
+</div>
+
+<div class="form-section">
+  <h2>Contact Us</h2>
+  <form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message"></textarea><br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<div class="footer">
+  <p>&copy; 2023 Amazon - All rights reserved.</p>
+</div>
+
+<script>
+  function navigateTo(page) {
+    // Placeholder for navigation logic
+    console.log("Navigate to: " + page);
+  }
+</script>
+
+</body>
+</html>
